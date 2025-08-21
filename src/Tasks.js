@@ -5,7 +5,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 const Tasks = ({newTask, setNewTask, handleSubmit}) => {
   return (
     <section>
-      <form className= 'Task' onSubmit={handleSubmit}>
+      <form className= 'Task' id="taskForm" onSubmit={handleSubmit}>
 <label htmlFor='Tasks'></label>
 <input
 id='Tasks'
@@ -18,6 +18,7 @@ type='text'
       />
       </form>
       <button 
+  form="taskForm"
       type='submit'
       aria-label='Add Task'>  <FontAwesomeIcon icon={faPlus} /></button>
     </section>
@@ -25,3 +26,4 @@ type='text'
 }
 
 export default Tasks
+
