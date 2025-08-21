@@ -3,13 +3,7 @@ import Tasks from "./Tasks";
 import TaskList from "./TaskList";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      checked: false,
-      task:'Sleep'
-    }
-  ]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
 
   const addTask = (task) => {
